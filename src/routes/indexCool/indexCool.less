@@ -1,0 +1,49 @@
+.cool-view{
+  height: 100%;
+  .footer-wrapper{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:4.17rem;
+    background: #2C2E3A;
+    border-top:1px solid #494a50;
+    .tab-list{
+      font-size: 0;
+      .tab-item{
+        display: inline-block;
+        width: 25%;
+        //line-height: 4.17rem;
+        font-size: 0.84rem;
+        text-align: center;
+        color: #d8d8d8;
+        .footer-icon{
+          margin: 0.6rem 0 0.3rem;
+          font-size: 1.72rem;
+          display: block;
+        }
+        .solid{
+          display: none;
+        }
+        .hollow{
+          display: block;
+        }
+        a{
+          color: #d8d8d8;
+          text-decoration: none;
+        }
+      }
+      .active .tab-item{
+        color: #fccb51;
+      }
+      .active{
+        .solid{
+          display: block;
+        }
+        .hollow{
+          display: none;
+        }
+      }
+    }
+  }
+}

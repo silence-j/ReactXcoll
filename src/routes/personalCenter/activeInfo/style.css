@@ -1,0 +1,120 @@
+.D-container {
+  background: #2C2E3A;
+}
+.D-container .time-limit {
+  padding: 1.67rem 1.25rem 1.25rem;
+  color: #fff;
+}
+.D-container .time-limit .time-img {
+  width: 6rem;
+  float: right;
+}
+.D-container .time-limit .start {
+  margin-top: 0.83rem;
+  height: 1.08rem;
+}
+.D-container .time-limit .info {
+  font-size: 1.17rem;
+  font-family: 'PingFangSC-Regular';
+  color: #999999;
+}
+.D-container .time-limit .time {
+  margin-top: 1.17rem;
+}
+.D-container .time-limit .address {
+  margin-top: 0.83rem;
+}
+.D-container .time-limit .count {
+  margin-top: 1.25rem;
+  height: 2.33rem;
+  line-height: 2.33rem;
+}
+.D-container .time-limit .count .money {
+  font-size: 1.67rem;
+  color: #F2F2F2;
+  float: right;
+}
+.D-container .time-limit .count .money em {
+  font-size: 1rem;
+  position: relative;
+  top: -5px;
+}
+.D-container .time-limit .prince {
+  font-size: 1.17rem;
+  color: #FCCB51;
+  width: 100%;
+  height: 1.67rem;
+  position: relative;
+}
+.D-container .time-limit .prince span {
+  position: absolute;
+  right: 0;
+}
+.D-container .coach-info {
+  position: relative;
+  padding: 1.67rem 1.25rem;
+  color: #fff;
+  border: 0.04rem solid #979797;
+}
+.D-container .coach-info img {
+  position: absolute;
+  width: 6.17rem;
+  height: 6.17rem;
+  border-radius: 50%;
+  background: pink;
+  right: 1.25rem;
+}
+.D-container .coach-info .coach-name {
+  font-size: 1.42rem;
+  width: 75%;
+}
+.D-container .coach-info .good-at {
+  font-size: 1.17rem;
+  margin-top: 0.63rem;
+  width: 75%;
+}
+.D-container .coach-info .good-at .field {
+  overflow: hidden;
+  line-height: 1.67rem;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.D-container .coach-info .good-at .allField {
+  line-height: 1.67rem;
+}
+.D-container .coach-info .showMore {
+  padding-top: 1.25rem;
+  text-align: center;
+}
+.D-container .msg-tit {
+  font-family: PingFangSC-Regular;
+  font-size: 1.33rem;
+  color: #FFFFFF;
+  padding: 1.67rem 1.25rem 0.83rem;
+}
+.D-container .msg-tit .iconfont {
+  margin-right: 0.42rem;
+}
+.D-container .msg-board {
+  border-top: 0.04rem solid #666666;
+  padding: 0 1.25rem 1.25rem;
+}
+.D-container .msg-board .msg {
+  border-bottom: 0.042rem dashed #666666;
+}
+.D-container .order {
+  width: 100%;
+  height: 4.17rem;
+  line-height: 4.17rem;
+  font-size: 1.5rem;
+  color: #2C2E3A;
+  text-align: center;
+  background: #FCCB51;
+  border: none;
+}
+.D-container .icon-size {
+  font-size: small;
+  margin-right: 0.67rem;
+}

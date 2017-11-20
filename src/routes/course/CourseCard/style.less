@@ -1,0 +1,74 @@
+.card-wrapper{
+  position: relative;
+  width: 100%;
+  height: 46vw;
+  border-radius: 0.16rem;
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  .card-state{
+    position: absolute;
+    top: 0;
+    left: -0.58rem;
+    width: 6.17rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.16rem;
+    line-height: 2rem;
+    border-radius: 0.16rem;
+    transform: skew(-30deg);
+    color: #2c2e3a;
+    background-color: #fccb51;
+    span{
+      display: inline-block;
+      transform: skew(30deg);
+    }
+  }
+  .price{
+    position: absolute;
+    right: 0.83rem;
+    top: 1.25rem;
+    width: 10.84rem;
+    height: 4.17rem;
+    line-height: 1;
+    .price-normal{
+      font-size: 1.66rem;
+      text-align: right;
+      color: #fff;
+    }
+    .price-vip{
+      font-size: 1.16rem;
+      color: #FCCB51;
+      text-align: right;
+      margin-top: 5px;
+    }
+  }
+  .card-info{
+    position: absolute;
+    bottom: 0.83rem;
+    left: 3%;
+    width: 94%;
+    line-height: 1;
+    color: #fff;
+    .card-name{
+      color: #fff;
+      font-size: 1.33rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    .time-address{
+      font-size: 1.16rem;
+    }
+    .ant-progress-bg{
+      background-color: #FCCB51;
+      height: 0.5rem!important;
+    }
+    .progress-number{
+      position: absolute;
+      right: 0;
+      bottom: 1.2rem;
+      font-size: 1.16rem;
+    }
+  }
+}

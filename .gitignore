@@ -1,0 +1,30 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# production
+
+# misc
+.DS_Store
+npm-debug.log*
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+.project
+.classpath
+.settings
+.pydevproject
+.DS_Store
+
+logs
+*.log
+bin
+
+
+# idea #
+.idea
+*.iml

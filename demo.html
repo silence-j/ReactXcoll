@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+
+	</head>
+
+	<body>
+		hello , x cool!
+		<button class="button">支付</button>
+		<div id="name"></div>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.js"></script>
+		<script>
+			/**
+			 * 点击支付按钮
+			 * @return {[type]} [description]
+			 */
+
+			/**
+			 * js-sdk 初始化
+			 * @type {[type]}
+			 */
+
+			$.get('http://servertest.loonxi.com/wx/init/params', function(response) {
+				var wxConfig = {
+					debug: true, // 开启调试模式,调用的所有api的返回值会在客户端swal出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+					appId: response.data['appId'], // 必填，公众号的唯一标识
+					timestamp: response.data['timestamp'], // 必填，生成签名的时间戳
+					nonceStr: response.data['nonceStr'], // 必填，生成签名的随机串
+					signature: response.data['signature'], // 必填，签名，见附录1
+					jsApiList: ['chooseWXPay']
+				}
+
+				response = wxConfig
+				// console.log(wxConfig)
+				wx.config(wxConfig);
+			})
+			/**
+			 * 获取用户信息接口
+			 * @type {[type]}
+			 */
+			$.get('http://servertest.loonxi.com/wx/user/info' + GetQueryString("code"), function(data) {
+				$('#name').append(data.data.nickName)
+				
+				alert(data)
+				console.log(data)
+				
+				$.post("http://www.beangou.com/wx/prepare/pay",{openId:data.data.openId},function(response){
+					//点击buton，进行支付
+				    $(".button").click(function pay() {
+				    	
+				    	console.log(response)
+
+							wx.chooseWXPay({
+								timestamp: response.data.timeStamp, // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
+								nonceStr: response.data.nonceStr, // 支付签名随机串，不长于 32 位
+								package: response.data.payPackage, // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
+								signType: response.data.signType, // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
+								paySign: response.data.sign, // 支付签名
+								success: function(res) {
+									// 支付成功后的回调函数
+									alert("支付成功");
+
+								},
+								fail: function(res) {
+									// 支付失败后的回调函数
+									alert("支付发生异常！");
+								}
+							});
+						})  	
+				})    
+			})
+
+			wx.ready(function() {
+
+			});
+
+			wx.error(function(res) {
+				console.log(res);
+			});
+			
+			//截取一段url中一个变量的值的方法
+
+			function GetQueryString(name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+				var r = window.location.search.substr(1).match(reg); //获取url中"?"符后的字符串并正则匹配
+				var context = "";
+				if(r != null)
+					context = r[2];
+				reg = null;
+				r = null;
+				return context == null || context == "" || context == "undefined" ? "" : context;
+			}
+			
+	       alert(GetQueryString("code"))
+	
+		</script>
+	</body>
+	
+	
+	
+	
+	
+	
+
+</html>

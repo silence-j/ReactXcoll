@@ -1,0 +1,22 @@
+{
+  "entry": "src/index.js",
+  "env": {
+    "development": {
+      "disableCSSModules": true,
+      "extraBabelPlugins": [
+        "dva-hmr",
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": "css" }],
+        ["import", { "libraryName": "antd-mobile", "style": "css" }]
+      ]
+    },
+    "production": {
+      "disableCSSModules": true,
+      "extraBabelPlugins": [
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": "css" }],
+        ["import", { "libraryName": "antd-mobile", "style": "css" }]
+      ]
+    }
+  }
+}

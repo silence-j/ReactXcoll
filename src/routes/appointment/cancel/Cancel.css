@@ -1,0 +1,33 @@
+.content {
+  width: 22.5rem;
+  height: 11.25rem;
+  margin: 11.16rem auto;
+  background-color: #ffffff;
+  padding-top: 1.25rem;
+}
+.content .tit {
+  width: 100%;
+  border-bottom: 0.042rem solid #999999;
+  text-align: center;
+  line-height: 7.09rem;
+  padding-bottom: 1.25rem;
+}
+.content .tit p {
+  font-family: PingFangSC-Regular;
+  font-size: 1.5rem;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.content .tit .cancel {
+  font-family: PingFangSC-Regular;
+  font-size: 1.25rem;
+  color: #888888;
+  letter-spacing: 0;
+  line-height: 1.875rem;
+}
+.content .know {
+  text-align: center;
+  line-height: 4.16rem;
+}

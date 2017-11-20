@@ -1,0 +1,18 @@
+.declaration-wrap {
+  padding: 0 1.25rem;
+}
+.declaration-wrap h1,
+.declaration-wrap h2 {
+  font-size: 1.33rem;
+  text-align: left;
+  line-height: 1.33rem;
+  margin-bottom: 1.67rem;
+  color: #FCCB51;
+}
+.declaration-wrap h3,
+.declaration-wrap p {
+  font-size: 1.16rem;
+  line-height: 1.67rem;
+  color: #cccccc;
+  margin-bottom: 1.67rem;
+}

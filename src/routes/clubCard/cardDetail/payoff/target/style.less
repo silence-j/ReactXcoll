@@ -1,0 +1,133 @@
+body {
+    background-color: #2C2E3A;
+    .container-wrap {
+        width: 100%;
+        h2 {
+            font-family: 'PingFangSC-Regular';
+            font-size: 1.17rem;
+            color: #999999;
+            letter-spacing: 0;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 2.56rem;
+            line-height: 1.67rem;
+        }
+        .content-wrap {
+            h1 {
+                font-family: 'PingFangSC-Regular';
+                font-size: 1.42rem;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 2rem;
+                margin-top: 1.67rem;
+            }
+            .target {
+                width: 100%;
+                padding: 0 6%;
+                .target-list {
+                    width: 100%;
+                    .target-item {
+                        width: 46.3%;
+                        height: 3.75rem;
+                        border: 0.08rem solid #D8D8D8;
+                        color: #D8D8D8;
+                        border-radius: 0.17rem;
+                        text-align: center;
+                        margin-right: 7.4%;
+                        margin-top: 1.25rem;
+                        display: inline-block;
+                        position: relative;
+                        span {
+                            font-family: 'PingFangSC-Regular';
+                            font-size: 1.42rem;
+                            letter-spacing: 0;
+                            line-height: 3.75rem;
+                        }
+                        .check-box {
+                            display: none;
+
+                        }
+                    }
+                    .target-item:nth-of-type(2n){
+                        margin-right:0;
+                    }
+                    .active {
+                         border: 0.08rem solid #FCCB51;
+                         color: #FCCB51;
+                        .check-box {
+                            display: block;
+                            position: absolute;
+                            width: 1.33rem;
+                            height: 1.33rem;
+                            right: 0;
+                            bottom: 0;
+                            background-color: #FCCB51;
+                            color:  #2C2E3A;
+                            line-height: 1.33rem;
+                            text-align: center;
+                            border-top-left-radius: 0.33rem;
+                            .iconfont {
+                                font-size: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+            h2 {
+                font-family: 'PingFangSC-Regular';
+                font-size: 1.42rem;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                margin-bottom: 1.13rem;
+            }
+            .actuality-list {
+                width: 100%;
+                .actuality-item {
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 0 23.3%;
+                    margin-top: 0.84rem;
+                    text-align: center;
+                   .basics {
+                       width: 100%;
+                       height: 3.75rem;
+                       border-radius: 1.825rem;
+                       border: 0.08rem solid #D8D8D8;
+                       text-align: center;
+                       line-height: 3.75rem;
+                       font-family: 'PingFangSC-Regular';
+                        font-size: 1.42rem;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                   }
+                    .active {
+                        background-color: #FCCB51;
+                        color: #000000;
+                    }
+                    p {
+                        font-family: PingFangSC-Regular;
+                        font-size: 1.17rem;
+                        color: #999999;
+                        letter-spacing: 0;
+                        margin-top: 0.84rem;
+                    }
+                }
+                
+            }
+            .done {
+                width: 100%;
+                height: 4.17rem;
+                border-radius: none;
+                position: fixed;
+                bottom: 0;
+                font-family: PingFangSC-Regular;
+                font-size: 1.5rem;
+                color: #2C2E3A;
+            }
+            .ant-btn {
+                border-radius: 0;
+            }
+        }
+    }
+}

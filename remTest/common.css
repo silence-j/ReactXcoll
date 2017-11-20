@@ -1,0 +1,22 @@
+body, html{
+  font-size: 12px;
+}
+
+// iphone 6屏幕尺寸
+@media screen and (max-width:640px){
+    body, html{
+      font-size: 10.24px;
+    }
+}
+// 6plus 尺寸
+@media screen and (max-width:828px){
+    body, html{
+      font-size: 13.25px;
+    }
+}
+// ipad尺寸
+@media screen and (min-width:1368px){
+    body, html{
+      font-size: 16px;
+    }
+}

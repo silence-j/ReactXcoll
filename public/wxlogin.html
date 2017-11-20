@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>微信登录中...</title>
+  
+</head>
+<body>
+    <script>
+    	
+    	function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg); //获取url中"?"符后的字符串并正则匹配
+        var context = "";
+        if(r != null)
+          context = r[2];
+        reg = null;
+        r = null;
+        return context == null || context == "" || context == "undefined" ? "" : context;
+      }
+      /**
+       * 公众账号配置 跳转的tabid
+       * 1 精品团课
+       * 2 私教
+       * 3 会员卡
+       * 4 我的预约
+       * 5 开门
+       * 6 个人秀
+       * 7 活动
+       * 8 新手指南
+       * 9 关于我们
+       * 10 个人中心
+       * 11 消费记录
+       * 12 运动建议
+       * @type {[type]}
+       */
+      var tabNum = getQueryString('tab')
+      if ( tabNum === '10') {
+        window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx87fe70de2a1dd6b1&redirect_uri=http%3A%2F%2Fxcooltest.loonxi.com%2Findex.html%23%2Fhomepage%2Fcenter&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect")
+      } else if ( tabNum === '11') {
+        window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx87fe70de2a1dd6b1&redirect_uri=http%3A%2F%2Fxcooltest.loonxi.com%2Findex.html%23%2Fhomepage%2Fexpense&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect")
+      } else if ( tabNum === '12') {
+        window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx87fe70de2a1dd6b1&redirect_uri=http%3A%2F%2Fxcooltest.loonxi.com%2Findex.html%23%2FindexCool%2FsportAd&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect")
+      } else if ( tabNum === '6') {
+        window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx87fe70de2a1dd6b1&redirect_uri=http%3A%2F%2Fxcooltest.loonxi.com%2Findex.html%23%2FindexCool%2Fsocial%2FsocialHot&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect")
+      } else if ( tabNum === '7') {
+        window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx87fe70de2a1dd6b1&redirect_uri=http%3A%2F%2Fxcooltest.loonxi.com%2Findex.html%23%2FindexCool%2FsocialMine&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect")
+      } else if ( tabNum === '5') {
+        window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx87fe70de2a1dd6b1&redirect_uri=http%3A%2F%2Fxcooltest.loonxi.com%2Findex.html%23%2Fopen&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect")
+      }  else if ( tabNum === '8') {
+        window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx87fe70de2a1dd6b1&redirect_uri=http%3A%2F%2Fxcooltest.loonxi.com%2Findex.html%23%2FindexCool%2FFresh&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect")
+
+      }  else if ( tabNum === '9') {
+        window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx87fe70de2a1dd6b1&redirect_uri=http%3A%2F%2Fxcooltest.loonxi.com%2Findex.html%23%2FindexCool%2FaboutUs&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect")
+        
+      }  else if ( tabNum === '4') {
+        window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx87fe70de2a1dd6b1&redirect_uri=http%3A%2F%2Fxcooltest.loonxi.com%2Findex.html%23%2Findex%2Fappointment&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect")
+      }  else if ( tabNum === '3') {
+        window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx87fe70de2a1dd6b1&redirect_uri=http%3A%2F%2Fxcooltest.loonxi.com%2Findex.html%23%2Findex%2FclubCard&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect")
+      }  else if ( tabNum === '2') {
+        window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx87fe70de2a1dd6b1&redirect_uri=http%3A%2F%2Fxcooltest.loonxi.com%2Findex.html%23%2Findex%2Fpersonal&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect")
+      } else {
+        window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx87fe70de2a1dd6b1&redirect_uri=http%3A%2F%2Fxcooltest.loonxi.com%2Findex.html%23%2Findex%2Fcourse&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect")
+      
+      }
+    	
+    </script>
+</body>
+</html>

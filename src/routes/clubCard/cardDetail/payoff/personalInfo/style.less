@@ -1,0 +1,175 @@
+body {
+    background-color: #2C2E3A;
+    .target-container {
+        width: 100%;
+        h2 {
+            font-family: 'PingFangSC-Regular';
+            font-size: 1.17rem;
+            color: #999999;
+            letter-spacing: 0;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 2.56rem;
+            line-height: 1.67rem;
+        }
+        .target-content {
+            h2 {
+                font-family: 'PingFangSC-Regular';
+                font-size: 1.42rem;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 2rem;
+                margin-top: 1.67rem;
+            }
+            .choose-sex {
+                width: 53.3%;
+                height: 5.67rem;
+                margin: 0 auto;
+                background-color: #474854;
+                border-radius: 2.83rem;
+                margin-bottom: 4.16rem;
+                .male , .female{
+                    display: inline-block;
+                    width: 50%;
+                    height: 100%;
+                    border-radius: 2.83rem;
+                    line-height: 5.67rem;
+                    text-align: center;
+                    .iconfont {
+                        font-size: 3.5rem;
+                    }
+                }
+                .active {
+                    background-color: #FCCB51;
+                }
+            }
+            .height , .weight, .birth {
+                width: 100%;
+                
+                h2 {
+                    font-family: 'PingFangSC-Regular';
+                    font-size: 1.42rem;
+                    color: #FFFFFF;
+                    letter-spacing: 0;
+                }
+                .choose {
+                        height: 2rem;
+                        padding: 0 37%;
+                        font-size: 0;
+                        margin: 0 auto;
+                        position: relative;
+                        margin-top: 1rem;
+                    .left {
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+                        border-top: 0.59rem solid transparent;
+                        border-right: 1.17rem solid #666666;
+                        border-bottom: 0.59rem solid transparent;
+                        vertical-align: middle;
+                        position: absolute;
+                        top: 0;
+                        left: 36%;
+                    }
+                    .mid {
+                            font-family: PingFangSC-Regular;
+                            font-size: 1.42rem;
+                            color: #FFFFFF;
+                            letter-spacing: 0;
+                            display: inline-block;
+                            line-height: 13px;
+                            position: absolute;
+                            left: 2rem;
+                    }
+                    .right {
+                            display: inline-block;
+                            width: 0;
+                            height: 0;
+                            border-top: 0.59rem solid transparent;
+                            border-left: 1.17rem solid #666666;
+                            border-bottom: 0.59rem solid transparent;
+                            vertical-align: middle;
+                            position: absolute;
+                            right: 36%;
+                            top: 0;
+                    }
+                }
+                .slct {
+                    appearance:button;
+                    height: 1.8rem;
+                    background-color: transparent;
+                    border: none;
+                    color: #FFFFFF;
+                    font-size: 1.42rem;
+                    line-height: 1.8rem;
+                    vertical-align: top;
+                    position: absolute;
+                    top: -0.3rem;
+                    left: 42%;
+                }
+            }
+            .weight {
+                .choose {
+                    padding: 0 33.8%;
+                    .weight-list {
+                        position: absolute;
+                        top: 0;
+                        left: 43%;
+                        .weight-slct {
+                            height: 1.8rem;
+                            appearance:button;
+                            background-color: transparent;
+                            border: none;
+                            color: #FFFFFF;
+                            font-size: 1.42rem;
+                            line-height: 1.8rem;
+                            vertical-align: top;
+                        }
+                        .weight-left {
+                            width: 3rem;
+                        }
+                        .weight-right {
+                            position: absolute;
+                            left: 62%;
+                        }
+                    }
+                    
+                }
+            }
+            .birth {
+                .choose {
+                    padding: 0 33.8%;
+                    .birth-left {
+                        top: 0;
+                        left: 30%;
+                    }
+                    .mid {
+                        position: absolute;
+                        top: 0;
+                        left: 35.5%;
+                        width: 9rem;
+                    }
+                    .birth-right {
+                        top: 0;
+                        right: 30%;
+                    }
+                }
+            }
+        }
+        .next {
+                width: 100%;
+                height: 4.17rem;
+                border-radius: none;
+                position: fixed;
+                bottom: 0;
+                font-family: 'PingFangSC-Regular';
+                font-size: 1.5rem;
+                color: #2C2E3A;
+        }
+        .ant-btn {
+            border-radius: 0;
+            border: none;
+        }
+    }
+}

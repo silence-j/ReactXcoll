@@ -1,0 +1,123 @@
+body {
+    background-color: #2C2E3A;
+    .container {
+        .questionnaire {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            h3 {
+                font-family: 'PingFangSC-Regular';
+                font-size: 1.17rem;
+                color: #999999;
+                letter-spacing: 0;
+                line-height: 1.67rem;
+                margin-top: 2.54rem;
+            }
+            h2 {
+                margin-top: 3.33rem;
+                font-family: 'PingFangSC-Regular';
+                font-size: 1.42rem;
+                color: #FEFEFE;
+                letter-spacing: 0;
+                line-height: 2rem;
+            }
+            .radList {
+                width: 89.3%;
+                margin: 0 auto;
+                display: block;
+                margin-top: 1.66rem;
+                border:0.042rem solid #979797;
+                .radItem {
+                    display: block;
+                    width: 100%;
+                    padding: 1.25rem 0.84rem;
+                    text-align: left;
+                    border-bottom: 0.042rem solid #979797;
+                    .ant-radio-inner {
+                        width: 1.67rem;
+                        height: 1.67rem;
+                        border: none;
+                        &:after{
+                            width: 0.67rem;
+                            height: 0.67rem;
+                            left: 0.5rem;
+                            top: 0.5rem;
+                            background-color: #FCCB51;
+                        }
+                    }
+                    span:last-child {
+                        font-size: 1.16rem;
+                        color: #cccccc;
+                    }
+                    .saler-list {
+                        display: block;
+                        margin-top: 1.5rem;
+                        margin-left: 2.4rem;
+                        
+                        .saler {
+                        margin-right: 0.5rem;
+                        }
+                        .ipt {
+                            width: 13.3rem;
+                            height: 2.32rem;
+                            border: 0.042rem solid #F2F2F2;
+                            border-radius: 0.17rem;
+                            outline:none;  
+                            color: #333333;
+                        }
+                    }
+                    .buy-self {
+                        display: block;
+                        margin-top: 1.5rem;
+                        margin-left: 2.4rem;
+                       .buy-item {
+                           margin-bottom: 1.5rem;
+                           overflow: hidden;
+                           span {
+                                float: left;
+                           }
+                            .ckbox {
+                                float: right;
+                            }
+                       } 
+                    }
+                }
+                .radItem:last-child {
+                    border-bottom: 0.084rem solid #979797;
+                }
+            }
+        }
+         .done {
+                width: 100%;
+                height: 4.17rem;
+                border-radius: none;
+                position: fixed;
+                bottom: 0;
+                font-family: 'PingFangSC-Regular';
+                font-size: 1.5rem;
+                color: #2C2E3A;
+                background: #FCCB51;
+        }
+        .ant-btn {
+            border-radius: 0;
+            border-color: #FCCB51;
+        }
+    }
+}
+
+.ant-checkbox-inner:after {
+    -webkit-transform: rotate(45deg) scale(0);
+    -ms-transform: rotate(45deg) scale(0);
+    transform: rotate(45deg) scale(0);
+    position: absolute;
+    display: table;
+
+    height: 1rem;
+    border: 0.08rem solid #fff;
+    border-top: 0;
+    border-left: 0;
+    content: ' ';
+    -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6);
+    -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6);
+    transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6);
+}

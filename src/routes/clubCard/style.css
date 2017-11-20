@@ -1,0 +1,87 @@
+.clubCard-container {
+  width: 100%;
+}
+.clubCard-container .card-list {
+  width: 100%;
+  padding-bottom: 4.17rem;
+}
+.clubCard-container .card-list .card-item {
+  width: 100%;
+  height: 8.96rem;
+  background-color: #262833;
+  padding: 0 4%;
+  position: relative;
+  box-sizing: border-box;
+}
+.clubCard-container .card-list .card-item .info-item {
+  background-image: linear-gradient(-132deg, #52D3E7 0%, #45C8DC 100%);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+  width: 92%;
+  height: 8.5rem;
+  position: absolute;
+  bottom: -0.835rem;
+  border-top-left-radius: 0.335rem;
+  border-top-right-radius: 0.335rem;
+  padding: 0.83rem 0 0 1.25rem;
+}
+.clubCard-container .card-list .card-item .info-item h2 {
+  font-family: 'PingFangSC-Semibold';
+  font-size: 1.167rem;
+  color: #262833;
+  letter-spacing: 0;
+  line-height: 1.66rem;
+}
+.clubCard-container .card-list .card-item .info-item .cool-me {
+  font-family: PingFangSC-Regular;
+  font-size: 1rem;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 1.37rem;
+}
+.clubCard-container .card-list .card-item .info-item .card-price {
+  margin-top: 1.5rem;
+}
+.clubCard-container .card-list .card-item .info-item .card-price .new-price {
+  font-family: 'PingFangSC-Semibold';
+  font-size: 1.667rem;
+  color: #000015;
+  letter-spacing: 0;
+  line-height: 1.375rem;
+  margin-right: 0.2rem;
+}
+.clubCard-container .card-list .card-item .info-item .card-price .new-price i {
+  font-size: 1rem;
+}
+.clubCard-container .card-list .card-item .info-item .card-price .old-price {
+  font-family: 'PingFangSC-Regular';
+  font-size: 1rem;
+  color: #444444;
+  letter-spacing: 0;
+  position: relative;
+}
+.clubCard-container .card-list .card-item .info-item .card-price .old-price .line {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid #ccc;
+  top: 50%;
+  left: 0;
+}
+.clubCard-container .card-list .card-item .info-item img {
+  width: 6.5rem;
+  position: absolute;
+  right: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.clubCard-container .card-list .line-20 {
+  width: 100%;
+  height: 0.835rem;
+  background-color: #333543;
+}
+.clubCard-container .card-list .line-60 {
+  width: 100%;
+  height: 2.5rem;
+  background-image: linear-gradient(-180deg, #353746 0%, #262833 100%);
+}

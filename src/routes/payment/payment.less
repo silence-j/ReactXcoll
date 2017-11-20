@@ -1,0 +1,171 @@
+
+.P-container{
+  position: relative;
+  height: 100%;
+  background: #2C2E3A;
+  overflow: hidden;
+  .pay-info{
+    color: #fff;
+    padding: 1.92rem 1.25rem;
+    border: 0.04rem solid #666666;
+    .info{
+      font-size: 1.42rem;
+      .info-right{
+        float: right;
+        em{
+          font-size: 0.16rem;
+        }
+      }
+      .prince{
+        color: #FCCB51
+      }
+    }
+    .info-dis{
+      margin-top: 2.17rem;
+    }
+    .member{
+      width:100%;
+      height: 1.83rem;
+      font-size: 1.17rem;
+      color: #CCCCCC;
+      margin-top: 0.83rem;
+      .be-member{
+        float: right;
+        a{
+          color: #FCCB51;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .payFor{
+    padding: 2.5rem 1.25rem 10.29rem;
+    color: #fff;
+    .type-for{
+      font-size: 1.42rem;
+      margin-bottom: 1.83rem;
+    }
+    .pay-infor{
+      position: relative;
+      .money-from{
+        margin-bottom: 1.75rem;
+        .card{
+          font-size: 1.33rem;
+          .emCard{
+            font-size: large;
+            margin-right: 0.67rem;
+            color: #FCCB51;
+            vertical-align: middle;
+          }
+          .zfb{
+            font-size: x-large;
+            margin-right: 0.67rem;
+            color: #1D82D4;
+            vertical-align: middle;
+          }
+          .wx{
+            font-size: x-large;
+            margin-right: 0.67rem;
+            color: #24AF41;
+            vertical-align: middle;
+          }
+        }
+      }
+      .choose-info{
+        position: absolute;
+        top:0;
+        right: 0;
+        .group{
+          .choose{
+            display: block;
+            margin-bottom: 1.75rem;
+            .ant-radio{
+              .ant-radio-inner{
+                display: inline-block;
+                height: 1.75rem;
+                width:1.75rem;
+                background: #2C2E3A;
+                border-color: #FCCB51;
+              }
+            }
+            .ant-radio-checked{
+              .ant-radio-inner{
+                background: #FCCB51;
+              }
+            }
+            .ant-radio-checked .ant-radio-inner:after {
+              width: 11px;
+              height: 5px;
+              background: none;
+              border: 2px solid #2C2E3A;
+              box-sizing: content-box;
+              transform: rotate(-45deg) scale(1);
+              border-top: 0;
+              border-radius: 0;
+              border-right: none;
+              transition: none;
+              top: 4px;
+              left: 3px;
+            }
+          }
+        }
+      }
+    }
+
+    .agree{
+      a{
+        color: #FCCB51;
+      }
+      .ant-checkbox-wrapper{
+        .ant-checkbox-checked .ant-checkbox-inner:after{
+          top:-1px;
+          left:3px;
+          border: 1px solid #FCCB51;
+          border-top: 0;
+          border-left: 0;
+        }
+      }
+      .ant-checkbox-inner{
+        background-color: #2C2E3A;
+      }
+      .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner{
+        border-color: #FCCB51;
+      }
+      .ant-checkbox-wrapper + span, .ant-checkbox + span{
+        vertical-align: middle;
+      }
+    }
+    .ant-checkbox-checked .ant-checkbox-inner, .ant-checkbox-indeterminate .ant-checkbox-inner{
+      background-color: #2C2E3A;
+      border-color: #FCCB51;
+    }
+  }
+  .payit{
+    position: absolute;
+    bottom:0;
+    font-size: 1.5rem;
+    height: 4.17rem;
+    line-height: 4.17rem;
+    width:100%;
+    background: #DDDDDD;
+    color: #999;
+    text-align: center;
+    border-radius: 0;
+  }
+  .ant-btn:active, .ant-btn.active{
+    border-color: #DDDDDD;
+  }
+  .payColor{
+    background: #FCCB51;
+    color: #2C2E3A;
+    border-color: #FCCB51;
+  }
+}
+.lessonbuy-view .pay-can .pay-book .agree-check .am-checkbox .am-checkbox-inner{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.lessonbuy-view .pay-can .pay-book .agree-check .am-checkbox .am-checkbox-inner:after{
+    width: 0.3rem;
+    height: 0.8rem;
+}

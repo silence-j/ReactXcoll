@@ -1,0 +1,252 @@
+body {
+  background-color:  #2C2E3A;
+  .club-card {
+    padding-bottom: 4.17rem;
+    .top-pic {
+      width: 100%;
+      height: 13.33rem;
+      background-image: linear-gradient(-132deg, #FFD365 0%, #FCCB51 100%);
+      box-shadow: 0 0 4px 0 rgba(0,0,0,0.50); 
+      position: relative;
+      padding: 1.5rem 0 0 1.25rem;
+      .title {
+        font-family: 'PingFangSC-Semibold';
+        font-size: 1.417rem;
+        color: #262833;
+        letter-spacing: 0;
+        line-height: 2rem;
+      }
+      .cool-me {
+        font-family: 'PingFangSC-Regular';
+        font-size: 1.17rem;
+        color: #4E505E;
+        letter-spacing: 0;
+      }
+      .card-type {
+        width: 8.33rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2.5rem;
+      }
+      .price {
+        position: absolute;
+        left: 1.25rem;
+        bottom: 1.25rem;
+        .discount {
+          font-family: PingFangSC-Regular;
+          font-size: 2rem;
+          color: #262833;
+          letter-spacing: 0;
+          line-height: 1.37rem;
+          i {
+            font-size: 1.17rem;
+          }
+        }
+        .original {
+          font-family: 'PingFangSC-Regular';
+          font-size: 1.17rem;
+          color: #4E505E;
+          letter-spacing: 0;
+          position: relative;
+          .line {
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            height: 0;
+            border-bottom: 1px solid #ccc;
+            top: 50%;
+            left: 0;
+          }
+        }
+      }
+      // .card-type {
+      //   position: absolute;
+      //   width: 7.28rem;
+      //   height: 7.75rem;
+      //   margin-top: 10%;
+      //   left: 50%;
+      //   -webkit-transform:translate(-50%);
+      //   -moz-transform:translate(-50%);
+      //   -ms-transform:translate(-50%);
+      //    -o-transform:translate(-50%);
+      // }
+      // .title {
+      //   position: absolute;
+      //   font-family: 'PingFangSC-Semibold';
+      //   font-size: 1.42rem;
+      //   color: #FFFFFF;
+      //   letter-spacing: 0;
+      //   left: 50%;
+      //   -webkit-transform:translate(-50%);
+      //   -moz-transform:translate(-50%);
+      //   -ms-transform:translate(-50%);
+      //    -o-transform:translate(-50%);
+      //    bottom: 4rem;
+      // }
+    }
+    .year-card {
+      .member-year {
+        width: 100%;
+        height: 5rem;
+        padding:  1.58rem 0 0 1.12rem;
+        color: #FCCB51;
+        .iconfont {
+          font-size: 1.3rem;
+          margin-right: 0.5rem;
+        }
+      }
+      .card-list {
+        width: 100%;
+        .card-item {
+          width: 100%;
+          height: 3.33rem;
+          margin-right: 2.7%;
+          border-radius: 0.17rem;
+          padding-left: 1.25rem;
+          position: relative;
+          background-color:  #262833;
+          p {
+            display: inline-block;
+            margin-top: 0.79rem;
+            font-family: 'PingFangSC-Regular';
+            font-size: 1.42rem;
+            color: #F2F2F2;
+            line-height: 2rem;
+          }
+          span {
+            font-family:'PingFangSC-Regular';
+            font-size: 1.42rem;
+            color: #3A3A3A;
+            line-height: 1.37rem;
+          }
+          .radItem {
+            text-align: left;
+            position: absolute;
+            right: 0;
+            line-height: 3.33rem;
+            .ant-radio-inner {
+                width: 1.67rem;
+                height: 1.67rem;
+                border: none;
+                &:after{
+                    width: 0.67rem;
+                    height: 0.67rem;
+                    left: 0.5rem;
+                    top: 0.5rem;
+                    background-color: #FCCB51;
+                }
+              }
+            }
+          .triangle {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-bottom: 1.98rem solid #FCCB51;
+            border-left: 1.98rem solid transparent;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            
+            .pitch{
+                position: absolute;
+                top: 0.92rem;
+                right: 0.08rem;
+                font-size: 1rem;
+              }
+          }
+        }
+        .card-item:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .privileges {
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 4.1%;
+      margin-top: 2.5rem;
+      padding-bottom: 0.84rem;
+      border-bottom: 0.04rem solid #666666;
+      .crown {
+        height: 2rem;
+        margin-right: 0.45rem;
+        color: #FCCB51;
+      }
+      h2 {
+        font-family: 'PingFangSC-Regular';
+        font-size: 1.42rem;
+        color: #FCCB51;
+        display: inline-block;
+        height: 2rem;
+        line-height: 2rem;
+      }
+    }
+    .state-list {
+      .statement {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 4%;
+        .state-item {
+          width: 100%;
+          border-bottom: 0.04rem solid #666666;
+          padding: 0.67rem 0;
+          h2 {
+            height: 1.88rem;
+            font-family: 'PingFangSC-Regular';
+            font-size: 1.33rem;
+            color: #CCCCCC;
+          }
+          p {
+            font-family: 'PingFangSC-Regular';
+            font-size: 1.17rem;
+            line-height: 1.67rem;
+            color: #999999;
+          }
+        }
+        .state-item:first-child {
+          padding-top: 1.67rem;
+        }
+        .state-item:last-child {
+          padding-bottom: 1.67rem;
+        }
+      }
+    }
+    .notice {
+      margin-top: 2.33rem;
+      padding-left: 4%;
+      box-sizing: border-box;
+      padding-bottom: 1.67rem;
+      h2 {
+        font-family: 'PingFangSC-Regular';
+        font-size: 1.42rem;
+        color: #FFFFFF;
+      }
+      .notice-list {
+        .notice-item {
+          margin-top: 0.84rem;
+          font-family: 'PingFangSC-Regular';
+          font-size: 1.17rem;
+          color: #CCCCCC;
+          line-height: 1.67rem;
+        }
+      }
+    }
+   
+      .buy-now {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 4.17rem;
+        width: 100%;
+        display: inline-block;
+        background-color: #FCCB51;
+        text-align: center;
+        line-height: 4.17rem;
+        font-family: 'PingFangSC-Regular';
+        font-size: 1.5rem;
+        color: #2C2E3A;
+      }
+    
+  }
+}
